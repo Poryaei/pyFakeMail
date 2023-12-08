@@ -1,0 +1,2 @@
+# pyFakeMail
+Python FakeMail tool
