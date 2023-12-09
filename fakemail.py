@@ -120,7 +120,5 @@ def get_emails(email: str):
     r = session.get('https://www.fakemail.net/index/refresh', headers=h)
     h['Reffer'] = 'https://www.fakemail.net/window/id/2'
     r = session.get('https://www.fakemail.net/email/id/2', headers=h)
-    # if 'tradingview' in r.text:
-    #     print('y')
     add_expire(email)
     return r.text
